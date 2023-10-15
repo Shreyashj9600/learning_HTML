@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .container {
+            border:  6px solid white;
+            display: flex;
+        }
+        .container > div {
+            color: white;
+            font-size: 25px;
+            padding: 15px;
+            text-align: center;
+        }
+        .container > div:first-child {
+            background-color: red;
+        }
+        .container > div:nth-child(2) {
+            background-color: yellow;
+        }
+        .container > div:last-child {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
